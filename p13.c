@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
 {
-	int n,r,sum=0;
-	printf("Enter the Number:");
+	int n,r,s=0;
+	printf("Enter the number:");
 	scanf("%d",&n);
 	while(n!=0)
 	{
 		r=n%10;
 		r=r*r;
-		sum=sum+r;
+		s=s+r;
 		n=n/10;
 	}
-	printf("\nThe Sum of Square of Digits is %d",sum);
+	printf("%d",s);
    return 0;
 }
